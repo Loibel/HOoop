@@ -5,6 +5,9 @@ class Medio(object):
 
 
     def reflejar(self, una_senal, tiempo_inicial, tiempo_final):
+                
+
+        
         """
         Los blancos en el medio reflejan la senal
         """

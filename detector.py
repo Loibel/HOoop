@@ -5,6 +5,9 @@ class Detector(object):
         pass
 
     def detectar(self, senal):
-
+        ret = False        
+        if senal.pegue_blanco == True:
+            ret = true        
+        return ret
         #TODO: Completar
-        pass
+
