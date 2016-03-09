@@ -7,6 +7,7 @@ import generador
 import datetime
 import detector
 import math
+import matplotlib.pyplot as plt
 
 # DISCLAMER!!
 # todo esta en castellano por razones didacticas
@@ -28,7 +29,7 @@ def main():
     #TODO construir un nuevo genrador de senales    
     generador_creado = generador.Generador(amplitud, fase, frecuencia)    
     #print generador_creado
-    
+    generador_creado.generar(tiempo_inicial,tiempo_final)
     #TODO construir un detector
     detector_creado = detector.Detector()
 
@@ -47,8 +48,10 @@ def main():
 
     #TODO contruir un medio
     medio_creado = medio.Medio(blanco)
-    #usar radar
     
-
+    #usar radar
+    encontro = radar_creado.detectar(medio_creado, tiempo_inicial, tiempo_final)
+    
+    
 if __name__ == "__main__":
     main()
