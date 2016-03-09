@@ -4,8 +4,8 @@ class Medio(object):
         self.blancos = blancos
 
 
-    def reflejar(self, una_senal, tiempo_inicial, tiempo_final):
-                
+    def reflejar(self, senal, tiempo_inicial, tiempo_final):
+        self.blancos.reflejar(senal, tiempo_inicial, tiempo_final)        
 
         
         """
